@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>html { font-family: "Roboto"}</style>
+  </head>
+
+  <body>
+    <h1>Exercícios codifique</h1>
+
+    <h2>Área de um  retângulo</h2>
+    <p>Insira a largura e altura de um retângulo e clique no botão para calcular a sua área.</p>
+
+    <label>Largura </label><input type="text" id="area_length"><br><br>
+    <label>Altura </label><input type="text" id="area_height"><br>
+    <p>
+      Área do retângulo = <strong id="area_result"></strong>
+    </p>
+    <button onclick="Utils.area()">Calcular área</button><br><br>
+
+    <h2>Perímetro de um retângulo</h2>
+    <p>Insira a largura e altura de um retângulo e clique no botão para calcular o seu perímetro.</p>
+
+    <label>Largura </label><input type="text" id="perimeter_length"><br><br>
+    <label>Altura </label><input type="text" id="perimeter_height"><br>
+    <p>
+      Perímetro do retângulo = <strong id="perimeter_result"></strong>
+    </p>
+    <button onclick = "Utils.perimeter()">Calcular perímetro</button><br><br>
+
+    <h2>Fórmula de Bhaskara</h2>
+    <p>Preencha a equação do segundo grau com os coeficientes para encontrar as raízes usando a fórmula de Bhaskara</p>
+
+    <label>Equação </label>
+    <input type="text" id="bhaskara_a" size="1"><strong>x² </strong>
+    <input type="text" id="bhaskara_b" size="1"><strong>x  </strong>
+    <input type="text" id="bhaskara_c" size="1"><strong> = 0</strong>
+    
+    <p>
+      X1 = <strong id="bhaskara_root1"></strong><br>
+      X2 = <strong id="bhaskara_root2"></strong><br>
+    </p>
+
+    <button onclick = "Utils.bhaskara()">Calcular as raíses</button><br><br>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
