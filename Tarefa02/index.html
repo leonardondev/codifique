@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>html { font-family: "Roboto"}</style>
+  </head>
+
+  <body>
+    <!--
+      (  1               5  ) => "muito suspeita"
+      (  1   2              ) => "muito suspeita"
+      (  1   2  !3   4      ) => "culpada";
+      (  1   2  !3  !4  !5  ) => "muito suspeita"
+      (      2  !3       5  ) => "culpada";
+
+      ( !1  !2  !3       5  ) => "muito suspeita"
+
+      (         !3          ) => "pouco suspeita"
+
+      (          3          ) => "inocente"
+    -->
+  
+    <h1>Exercício interrogatório</h1>
+
+    <h2>Perguntas</h2>
+    <p>Você conhecia a vítima?</p>
+    <input type="text" id="question_one"><br><br>
+
+    <p>Você estava nos arredores do local do crime?</p>
+    <input type="text" id="question_two"><br><br>
+
+    <p>Você tem algum álibi?</p>
+    <input type="text" id="question_three"><br><br>
+
+    <p>Você já brigou por qualquer motivo com a vítima?</p>
+    <input type="text" id="question_four"><br><br>
+
+    <p>Você já havia cometido algum crime semelhante antes?</p>
+    <input type="text" id="question_five"><br><br>
+
+    <button onclick="Utils.submit()" >Finalizar</button><br><br>
+
+    <p>
+      Parecer: <strong id="parecer"></strong>
+    </p>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
