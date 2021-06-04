@@ -23,7 +23,10 @@ const Utils = {
     }
 
     else {
-      document.getElementById("parecer").innerHTML = "pouco suspeita";
+      if ( answer_three )
+        document.getElementById("parecer").innerHTML = "inocente";
+      else
+        document.getElementById("parecer").innerHTML = "pouco suspeita";
     }    
   },
 
